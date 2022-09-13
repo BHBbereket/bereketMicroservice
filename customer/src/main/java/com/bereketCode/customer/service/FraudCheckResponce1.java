@@ -1,7 +1,8 @@
-package com.bereket.fraud;
+package com.bereketCode.customer.service;
 
-public class FraudCheckResponce {
+public class FraudCheckResponce1 {
     private boolean isfraud;
+
 //    public FraudCheckResponce(boolean isfraud) {
 //        this.isfraud = isfraud;
 //    }

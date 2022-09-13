@@ -13,9 +13,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/api/v2/customer")
 @Slf4j
-public record CustomerContoller(CustomerService customerService) {
-//    @Autowired
-//    private CustomerService customerService;
+public class CustomerContoller {
+    @Autowired
+    private CustomerService customerService;
     @PostMapping
     public  void registerCustomer(@RequestBody CustomerRequest customer){
         log.info("new coustomer registration {}",customer);
